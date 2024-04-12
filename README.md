@@ -1,14 +1,16 @@
 # Diffusion Score-Based Model for Photoacoustic Tomography (PAT)
 
-This repo contains the code of the Diffusion Score-Based Model for PAT project for Caltech's CS101, Fall 2022.
+This repo contains the code for the paper "SCORE-BASED DIFFUSION MODELS FOR PHOTOACOUSTIC TOMOGRAPHY IMAGE RECONSTRUCTION," presented at ICASSP 2024.
 
-Authors: [Laure Delisle](https://github.com/laure-delisle), [Sreemanti Dey](https://github.com/sreemanti-dey), [Snigdha Saha](https://github.com/snigdhasaha7) 
-
-Mentors: [Dr. Katie Bouman](http://users.cms.caltech.edu/~klbouman/), [Dr. Oscar Leong](https://www.oscarleong.com/home), [Berthy Feng](https://www.berthyfeng.com/), Manxiu Cui
+Authors: Sreemanti Dey, Snigdha Saha, Berthy T. Feng, Manxiu Cui, Laure Delisle, Oscar Leong, Lihong V. Wang, Katherine L. Bouman.
 
 --------------------
 
-We apply the concept of Score-Based diffusion models using stochastic differential equations to the space of inverse problems. Specifically, we solve the toy problems of denoising, inpainting, and Gaussian downsampling. Then, we apply our approach to image reconstruction in Photoacoustic Tomography. 
+Abstract: Photoacoustic tomography (PAT) is a rapidly-evolving medical imaging modality that combines optical absorption contrast with ultrasound imaging depth. One challenge in PAT is image reconstruction with inadequate acoustic signals due to limited sensor coverage or due to the density of the transducer array. Such cases call for solving an ill-posed inverse reconstruction problem. In this work, we use score-based diffusion models to solve the inverse problem of reconstructing an image from limited PAT measurements. The proposed approach allows us to incorporate an expressive prior learned by a diffusion model on simulated vessel structures while still being robust to varying transducer sparsity conditions.
 
-We provide a showcase of our work and results in [work_showcase.ipynb](https://github.com/snigdhasaha7/diffusion-for-photoacoustic/blob/main/work_showcase.ipynb). We suggest running the .ipynb in [Google Colab](https://githubtocolab.com/snigdhasaha7/diffusion-for-photoacoustic/blob/main/work_showcase.ipynb) and selecting runtime to be GPU, but this can also be run locally. 
+We provide a showcase of our work and results in [Demo_Notebook.ipynb](https://github.com/sreemanti-dey/diffusion_for_PAT/blob/main/Demo_Notebook.ipynb). We suggest running the .ipynb in Google Colab and selecting runtime to be GPU, but this can also be run locally.
+
+--------------------
+
+The folders 'models' and 'op', as well as the files 'datasets.py', 'evaluation.py', 'likelihood.py', and 'losses.py' are from Song et al's [code base](https://github.com/yang-song/score_sde_pytorch) from the paper [Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole, “Score-based generative modeling through stochastic differential equations,” 2021](https://openreview.net/forum?id=PxTIG12RRHS). 
 
