@@ -14,7 +14,7 @@ We provide a showcase of our work and results in [Demo_Notebook.ipynb](https://g
 
 The folders 'models' and 'op', as well as the files 'datasets.py', 'evaluation.py', 'likelihood.py', and 'losses.py' are from Song et al's [code base](https://github.com/yang-song/score_sde_pytorch) from the paper [Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, and Ben Poole, “Score-based generative modeling through stochastic differential equations,” 2021](https://openreview.net/forum?id=PxTIG12RRHS). 
 
-
+```bib
 @inproceedings{
   song2021scorebased,
   title={Score-Based Generative Modeling through Stochastic Differential Equations},
@@ -23,4 +23,20 @@ The folders 'models' and 'op', as well as the files 'datasets.py', 'evaluation.p
   year={2021},
   url={https://openreview.net/forum?id=PxTIG12RRHS}
 }
+```
 
+## References 
+
+If you find this work useful, please consider citing
+```bib
+@inproceedings{10447579,
+  author={Dey, Sreemanti and Saha, Snigdha and Feng, Berthy T. and Cui, Manxiu and Delisle, Laure and Leong, Oscar and Wang, Lihong V. and Bouman, Katherine L.},
+  booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Score-based Diffusion Models for Photoacoustic Tomography Image Reconstruction}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={2470-2474},
+  keywords={Transducers;Ultrasonic imaging;Tomography;Optical imaging;Acoustics;Optical sensors;Speech processing;Photoacoustic Tomography;Diffusion Models;Image Reconstruction;Generative Modeling},
+  doi={10.1109/ICASSP48485.2024.10447579}}
+```
